@@ -4,11 +4,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dukamarket</title>
+    <link href="css/animate.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <section class="nav-bar">
+      <div class="nav-bar">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg top-bar">
+          <div class="container-fluid">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    USD
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #f03723; " href="#">+1(800) 123 456 789</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link br-link-top-bar" href="#">My Account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link br-link-top-bar" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link br-link-top-bar" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link br-link-top-bar" href="#">FAQs</a>
+                </li>
+              </ul>
+        
+            </div>
+          </div>
+          </nav> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg middle-bar">
+            <div class="logo  col-4 d-flex">
+                <a class="navbar-brand" href="#"><img src="img/logo-13_200x@2x.avif" alt=""></a>
+                 <div>
+                  <span class="text-call">
+                    Call Us Now: 
+                    <br>
+                    <a href="tel:+001%20123%20456%20789">(+001) 123 456 789</a>
+                  </span>
+                </div>
+            </div>
+            <div class="search-box col-5">
+                <div class="">
+                  <input class="input-search" type="text" placeholder="Search for products...">
+                  <button class="btn btn-danger">Search</button>
+                </div>
+            </div>
+            <div class="user-btn col-3">
+              <i class="fa-regular fa-user icon-nav"></i>
+              <i class="fa-regular fa-heart icon-nav"></i>
+              <i class="fa-regular fa-cart-shopping icon-nav"></i>
+            </div>
+          </nav>
+        </div> 
+      </div> 
+    </section>
+
+    <section class="end-bar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+        </nav>
+      </div>
+    </section>
+    
+    
+    
+
     
     
     
@@ -16,13 +143,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
@@ -41,6 +162,8 @@
     
     
     <script src="js/min.js"></script>
+    <script src="https://kit.fontawesome.com/2013a99220.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-dropdown-hover/4.2.0/jquery.bootstrap-dropdown-hover.min.js" integrity="sha512-rDm8t8H09M9WGnC3BU8KybF7KedHIx+7qUS7ihcZb7z9uUqcJudpVCjNYQQXNXGBYE/QgOui0s8fHK/W0vATGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
