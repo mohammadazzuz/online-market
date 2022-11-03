@@ -10,7 +10,6 @@
     border-bottom: 0px;
 }
 .end-bar{
-    height: 50px;
     border-bottom: 0px;
     background: #232f3e !important;
 }
@@ -24,6 +23,20 @@
       pointer-events: none;
   }
 
+  .drob-bg{
+    
+    width: 200px;
+    height: 50px;
+  }
+
+  .drob-bg:hover{
+    background-color: #f03723;
+  }
+  .drob-text{
+        padding: 15px;
+      
+  }
+
   .nav-link{
     color: white;
   }
@@ -32,6 +45,9 @@
     color:#f03723 ;
   }
 
+  .nav-link:active{
+    color:#f03723 ;
+  }
   .br-link-top-bar{
     margin: 0;
     padding: 0 20px !important;
@@ -54,12 +70,10 @@
     border-radius: 3px;
     height: 50px;
     border: 1px solid #e3e3e3;
-    width: 80%;
+    width: 70%;
     line-height: 18px;
     color: #999;
     font-size: 14px;
-    margin-right: 0;
-    padding-right: 0;
   }
   
   .btn{
@@ -70,6 +84,39 @@
   }
 
   .icon-nav{
-    font-size: 50px;
+    font-size: 28px;
     color: white;
+    position: absolute;
+    left: 0;
   }
+  .icon-text{
+    color: white;
+    display: block;
+    line-height: 1;
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .navbar-text{
+    color: #fdc801;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 100px;
+   
+  }
+
+
+.nav-btn-user li{
+    display: ruby-base;
+    list-style: none;
+    position: relative;
+    vertical-align: bottom;
+}
+.link-icon{
+    font-size: 14px;
+    position: relative;
+    line-height: 1;
+    display: block;
+    padding-left: 40px;
+}

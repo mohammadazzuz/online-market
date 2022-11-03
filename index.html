@@ -11,14 +11,13 @@
   <body>
     <section class="nav-bar">
       <div class="nav-bar">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg top-bar">
-          <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg top-bar ">
+          <div class="container px-0 pe-0">
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     USD
                   </a>
                   <ul class="dropdown-menu">
@@ -61,31 +60,56 @@
             </div>
           </div>
           </nav> 
-        </div>
       </div>
       <div class="container">
         <div class="row">
-          <nav class="navbar navbar-expand-lg middle-bar">
-            <div class="logo  col-4 d-flex">
-                <a class="navbar-brand" href="#"><img src="img/logo-13_200x@2x.avif" alt=""></a>
-                 <div>
-                  <span class="text-call">
+          <nav class="navbar navbar-expand-lg middle-bar px-0 pe-0">
+            <div class="logo  col-md-4 d-flex">
+                <div class="d-flex justify-content-lg-end">
+                  <a class="navbar-brand" href="#"><img src="img/logo-13_200x@2x.avif" alt=""></a>
+                  <span class="text-call mx-4">
                     Call Us Now: 
                     <br>
-                    <a href="tel:+001%20123%20456%20789">(+001) 123 456 789</a>
+                    <a class="nav-link text-white" href="tel:+001%20123%20456%20789">(+001) 123 456 789</a>
                   </span>
                 </div>
             </div>
-            <div class="search-box col-5">
-                <div class="">
+            <div class="search-box col-md-4 pe-0 px-0">
+                <div class="d-flex align-items-center justify-content-center">
                   <input class="input-search" type="text" placeholder="Search for products...">
                   <button class="btn btn-danger">Search</button>
                 </div>
             </div>
-            <div class="user-btn col-3">
-              <i class="fa-regular fa-user icon-nav"></i>
-              <i class="fa-regular fa-heart icon-nav"></i>
-              <i class="fa-regular fa-cart-shopping icon-nav"></i>
+            <div class="user-btn col-md-4">
+              <ul class="nav-btn-user m-4">
+                <li class="item-list">
+                  <a href="#" class="link-icon nav-link">
+                    <i class="fa-regular fa-user icon-nav"></i>
+                    <span class="icon-text ">Login</span>
+                    <span class="text-white fw-bold">Login/Register</span>
+                  </a>
+                </li>
+                <li class="item-list">
+                  <a href="#" class="link-icon nav-link">
+                    <i class="fa-regular fa-heart icon-nav"></i>
+                    <span class="icon-text">Favority</span>
+                    <span class="text-white fw-bold">My Whishlist</span>
+                  </a>
+                </li>
+                <li class="item-list">
+                  <a href="#" class="link-icon nav-link">
+                    <i class="fa-solid fa-bag-shopping icon-nav"></i>
+                    <span class="icon-text">Your cart:</span>
+                    <span class="text-white fw-bold">€0.00</span>
+                  </a>
+                </li>
+
+              </ul>
+
+              <!--
+              <i class="fa-regular fa-heart icon-nav "></i>
+              <i class="fa-solid fa-bag-shopping icon-nav  "></i>
+              -->
             </div>
           </nav>
         </div> 
@@ -93,46 +117,86 @@
     </section>
 
     <section class="end-bar">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
+        <nav class="navbar navbar-expand-md py-0">
+          <div class="container pe-0">
+            <div class="row">
+            <div class=" navbar-collapse pt-0 pb-0">
+              <div class="dropdown col-md-3 drob-bg">
+              <div class="drob-text">
+                <h4 class=" dropdown-toggle nav-link text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>Dropdown button</span>
+                </h4>
+              </div>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+              </div>
+              <div class="col-md-8">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  HOME
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SHOP
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PAGE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BLOG
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+                  </ul>
+              </div>
+              <div class="row flex-column ">
+                <span class="navbar-text">
+                  LIMITED TIME OFFER!
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
         </nav>
-      </div>
     </section>
-    
     
     
 
